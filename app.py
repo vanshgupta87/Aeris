@@ -16,8 +16,8 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp'}
 
-# API_KEY = os.environ.get("GOOGLE_API_KEY")
-API_KEY="AIzaSyB_RmC6Wtlz82NwDBsTOkECao3c1J4KJ98"
+
+API_KEY = os.environ.get("GOOGLE_API_KEY")
 if not API_KEY:
     raise ValueError(
         "\n\nGOOGLE_API_KEY is not set!\n"
