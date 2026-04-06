@@ -18,14 +18,14 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp'}
 
 
 API_KEY = os.environ.get("GOOGLE_API_KEY")
-if not API_KEY:
-    raise ValueError(
-        "\n\nGOOGLE_API_KEY is not set!\n"
-        "In PowerShell, run:\n"
-        '  $env:GOOGLE_API_KEY = "your_api_key_here"\n'
-        "Then run: python app.py\n"
-        "(Both commands must be in the same PowerShell window)\n"
-    )
+# if not API_KEY:
+#     raise ValueError(
+#         "\n\nGOOGLE_API_KEY is not set!\n"
+#         "In PowerShell, run:\n"
+#         '  $env:GOOGLE_API_KEY = "your_api_key_here"\n'
+#         "Then run: python app.py\n"
+#         "(Both commands must be in the same PowerShell window)\n"
+#     )
 
 genai.configure(api_key=API_KEY)
 
